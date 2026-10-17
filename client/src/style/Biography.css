@@ -1,0 +1,203 @@
+.main-context-block{
+    display: grid;
+    flex: 0 0 300px;
+    gap: 14px;
+    padding: 22px;
+    border-left: 1px solid #e8e4ea;
+}
+.biography-detail .biography-detail-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 28px;
+    height: auto;
+    padding: 28px;
+    border: 0;
+}
+
+.biography-detail-images {
+    width: 100%; /* Permite que o container seja responsivo */
+    max-width: var(--max-width); /* Define um tamanho máximo elegante para a foto do Orlando Mendes no Desktop */
+    height: auto; /* Deixa a altura se ajustar dinamicamente */
+    aspect-ratio: 3 / 4; /* Mantém a proporção vertical perfeita mostrada no seu design */
+    overflow: hidden;
+    max-height: 600px;
+    display: flex;
+}
+
+.biography-detail-images .biographies-img {
+    width: 100%; /* Força a tag img a ocupar toda a largura do container */
+    height: 100%; /* Força a tag img a ocupar toda a altura do container */
+    display: block;
+    object-fit: cover; /* Recorta suavemente mantendo a proporção original */
+    object-position: center; /* Centraliza o foco no rosto do biografado */
+}
+
+
+.biography-detail-content {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    min-width: 0;
+    max-width: var(--max-width);
+
+}
+
+.biography-detail-content-image-img{
+    gap: 24px;
+    width: 500px;
+}
+.biography-detail-content-image-menu{
+    width: 250px;
+    align-items: end;
+}
+
+.biography-detail-header {
+    display: grid;
+    gap: 8px;
+}
+
+.biography-detail-eyebrow {
+    color: var(--purple-main);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.biography-detail-header h1 {
+    color: #222222;
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+
+.biography-detail-title {
+    color: #666666;
+    font-family: var(--font-display);
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.biography-detail-section {
+    display: grid;
+    gap: 8px;
+}
+
+.biography-detail-section h2 {
+    color: #302a34;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.biography-detail-section p,
+.biography-detail-section li {
+    color: #666666;
+    font-size: 19px;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+}
+
+.biography-detail-summary {
+    white-space: pre-line;
+}
+
+.biography-detail-section ul {
+    display: grid;
+    gap: 6px;
+    padding-left: 20px;
+}
+
+.biography-detail-section .biography-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.biography-tags li {
+    padding: 5px 10px;
+    background-color: #f1eef2;
+    font-size: 15px;
+}
+
+.biography-share {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid #e3dfe5;
+    background: #fff;
+    color: #49384e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.biography-share:hover {
+    border-color: #cfc5d3;
+    background: #f7f4f8;
+}
+
+.biography-share:focus-visible {
+    outline: 2px solid #583a66;
+    outline-offset: 2px;
+}
+
+.biography-share svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.biography-detail-section .biography-share-status {
+    font-size: 14px;
+}
+
+.biography-detail-date {
+    color: #89838d;
+    font-size: 12px;
+    text-align: end;
+}
+
+@media (max-width: 768px) {
+    .biography-detail .biography-detail-card {
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .biography-detail .biography-detail-images {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        aspect-ratio: auto;
+        overflow: visible;
+    }
+
+    .biography-detail .biography-detail-images-img,
+    .biography-detail .biography-detail-images-menu {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .biography-detail .biography-detail-images-img {
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+    }
+
+    .biography-detail .biography-detail-images-img .biographies-img {
+        width: 100%;
+        height: 100%;
+    }
+}

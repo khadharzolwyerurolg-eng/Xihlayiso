@@ -1,0 +1,163 @@
+
+.explorer-newsletter {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://livrariaultramarina.pt/wp-content/uploads/25431-scaled.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  
+  .newsletter-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 5rem 1.25rem; 
+  }
+
+  .newsletter-inner {
+    width: 100%;
+    max-width: 1500px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .newsletter-title {
+    font-family: var(--font-display, sans-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .explorer-newsletter .newsletter-overlay {
+      padding: 3.5rem 1rem;
+    }
+
+    .explorer-newsletter .newsletter-title {
+      font-size: clamp(1.5rem, 7vw, 1.8rem);
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
+    .explorer-newsletter .newsletter-description {
+      margin-bottom: 2rem;
+    }
+
+    .explorer-newsletter .newsletter-form {
+      align-items: stretch;
+      gap: 2rem;
+    }
+
+    .explorer-newsletter .input-group input {
+      font-size: 16px;
+    }
+
+    .explorer-newsletter .btn-confirm {
+      width: 100%;
+      padding: 0.9rem 1rem;
+    }
+  }
+
+  .newsletter-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 75ch; 
+    margin-bottom: 3.5rem;
+    opacity: 0.9;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .newsletter-form {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    gap: 2.5rem;
+    align-items: flex-end;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+
+  .input-group {
+    position: relative;
+    flex: 1;
+    width: 100%;
+
+    input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      padding: 0.6rem 0;
+      font-size: 1.1rem;
+      color: #ffffff;
+      outline: none;
+      transition: border-color 0.2s;
+
+      &:focus {
+        border-bottom-color: #ffffff;
+      }
+    }
+
+    label {
+      position: absolute;
+      left: 0;
+      top: -1.2rem; 
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      color:#f5b900;
+      pointer-events: none;
+      text-transform: uppercase;
+    }
+  }
+  /* Exemplo de substituição caso queira cores fixas sem variáveis no botão: */
+.explorer-newsletter .btn-confirm {
+    background-color: #ffffff; /* Fundo branco para contrastar com a imagem escura */
+    color: #0a050d; /* Letras escuras */
+    /* ... restante do código mantido igual */
+}
+
+
+  .btn-confirm {
+    background-color: var(--text-muted);
+    color: var(--text-onlight);
+    border: none;
+    padding: 0.9rem 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #f5b900;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

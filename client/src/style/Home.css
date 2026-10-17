@@ -1,0 +1,519 @@
+
+/* ==========================================================================
+   1. IMPORTAÇÕES E VARIÁVEIS GLOBAIS
+   ========================================================================== */
+@import url('https://googleapis.com');
+
+:root {
+  /* Cores */
+  --paper-100: #111113;
+  --paper-200: #111113;
+  --text-onlight: #f2f2f2;
+  --text-muted: #6d7075;
+  --text-oninkmuted: #9aa2b1;
+  --white: #ffffff;
+  --purple-main: #583a66;
+  --purple-dark: #3b1e44;
+  --purple-hover: #49384e;
+  --font-title: "Cormorant Garamond", serif;
+  
+  /* Tipografia */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: inherit;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* ==========================================================================
+   2. RESET E ESTILOS BASE DO SITE
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-inter);
+}
+
+html, body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: var(--paper-200);
+  background-color: #eeebeb; 
+  margin: 0;
+  padding: 0;
+  zoom: 0.85; /* Mantém o zoom proporcional do seu projeto original */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.nav-lock {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   3. ESTRUTURA E EIXOS DO LAYOUT MAIN (DESKTOP)
+   ========================================================================== */
+.app-container.home-page {
+    display: block;
+    width: 100%;
+    max-width: var(--max-width); 
+    margin: 0 auto;    
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(49, 49, 49, 0.05); 
+    padding: 0;
+    gap: 0;
+}
+
+.home-page .main-context-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    align-items: start;
+    gap: 32px;
+    padding: 32px;
+}
+
+.home-page .main-context-block-cards,
+.home-page .main-context-block-search {
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Container que envolve a fila vertical de cartões */
+.home-page .app-container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ==========================================================================
+   4. CARDS DE BIOGRAFIA INDIVIDUAIS (LISTAGEM DESKTOP)
+   ========================================================================== */
+.home-page .bio-info {
+    display: flex;         
+    align-items: flex-start; 
+    gap: 24px;             
+    padding-bottom: 24px;
+    border-bottom: 2.2px dotted var(--purple-main); 
+    min-height: 250px;
+    height: 250px;
+    text-decoration: none;
+}
+
+/* Container da Imagem do Card */
+.home-page .bio-info .image {
+    background-color: #111113;
+    width: 250px;
+    height: 200px;
+    margin: 2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.home-page .bio-info .image img,
+.home-page .bio-info .image-content {
+    display: block;
+    width: 250px;     
+    height: 200px;    
+    object-fit: cover; 
+    aspect-ratio: 16 / 9;
+}
+
+/* Estrutura Textual do Card */
+.home-page .bio-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;              
+}
+
+.home-page .bio-text-content h2 {
+    font-size: 30px;
+    color: #222222;
+    font-weight: 700;
+    margin-top: 2rem;
+    font-family: var(--font-mono), monospace;
+}
+
+.home-page .info-content {
+    width: 599px;
+    text-align: justify;
+}
+
+.home-page .bio-text-content p {
+    margin: 0;
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.4;
+    font-family: var(--font-display), serif;
+}
+
+.home-page .bio-text-content span {
+    font-size: 19px;
+    line-height: 1.9;
+    text-align: justify;
+    color: #999999;
+    font-family: var(--font-body);
+    display: -webkit-box;              
+    -webkit-line-clamp: 3;             
+    -webkit-box-orient: vertical;      
+    overflow: hidden;                  
+}
+
+/* ==========================================================================
+   5. BARRA LATERAL (PESQUISA, RECOMENDADOS E PARCEIROS DESKTOP)
+   ========================================================================== */
+.home-page .biography-search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 0;
+}
+
+.home-page .biography-search-controls {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.home-page .biography-search input {
+    min-width: 0;
+    flex: 1;
+    padding: 10px 12px;
+    font: inherit;
+    background-color: #f5f5f5;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+/* Estilos de compatibilidade para os grids de parceiros dentro do aside */
+.home-page .main-context-block-search > .app-container,
+.home-page .main-context-block-search .app-container-context > .app-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.home-page .main-context-block-search .app-container-context > .app-container {
+    display: block;
+}
+
+.home-page .main-context-block-search .gallery-wrapper {
+    justify-content: center;
+    gap: 12px !important;
+    margin: 0 !important;
+}
+
+.home-page .main-context-block-search .gallery-container {
+    width: calc(50% - 6px);
+    height: auto;
+    flex: 0 1 calc(50% - 6px);
+}
+
+.home-page .main-context-block-search .gallery-item {
+    width: 100% !important;
+    height: auto;
+    min-height: 140px;
+    padding: 12px !important;
+}
+
+/* Componente de Menu Relacionados Fixo */
+.app-container-menu {
+    display: grid;
+    gap: 14px;
+    padding: 22px;
+    width: 100%;
+}
+
+.app-container-menu > h2 {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f5b900;
+    color: #242127;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.bio-info-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #d8cddd;
+    box-shadow: 0 8px 20px rgba(35, 24, 40, 0.09);
+    width: 100%;
+    transition: all 160ms ease;
+}
+
+.bio-info-menu:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(35, 24, 40, 0.14);
+}
+
+.bio-info-menu-image {
+    width: 76px;
+    height: 68px;
+    flex: 0 0 76px;
+    overflow: hidden;
+    background-color: #f1eef2;
+}
+
+.bio-info-menu-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-info-menu-desc {
+    display: grid;
+    justify-items: start;
+    gap: 4px;
+    min-width: 0;
+    flex: 1;
+}
+
+.bio-info-menu-desc h4 {
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.35;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 0;
+}
+
+.bio-info-menu-desc .readmore {
+    color: var(--purple-main);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Paginação Desktop */
+.home-page .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 0;
+}
+
+.home-page .pagination button {
+    min-width: 20px;
+    padding: 5px 10px;
+    border: 1px solid #f3e3b4;
+    background-color: #ffffff;
+    color: #222222;
+    cursor: pointer;
+}
+
+.home-page .pagination button[aria-current="page"] {
+    border-color: #f5b900;
+    background-color: #f5b900;
+    color: #ffffff;
+}
+
+.home-page .pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* ==========================================================================
+   6. MEDIA QUERIES - RESPONSIVIDADE COMPLETA UNIFICADA (MOBILE/TABLET)
+   ========================================================================== */
+@media (max-width: 900px) {
+    
+    /* Estrutura de grid quebrada em bloco vertical único */
+    .home-page .main-context-block {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 16px; 
+    }
+
+    /* Prioridade de exibição: Biografias no topo, busca/parceiros embaixo */
+    .home-page .main-context-block-cards {
+        width: 100%;
+        order: 1; 
+    }
+
+    .home-page .main-context-block-search {
+        width: 100%;
+        order: 2; 
+    }
+
+    .home-page .app-container-cards {
+        gap: 32px;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* TRANSFORMAÇÃO DO CARD: Muda de linha horizontal para coluna vertical */
+    .home-page .app-container-cards .bio-info { 
+        display: flex;
+        flex-direction: column !important; 
+        align-items: flex-start;
+        width: 100%;
+        height: auto !important; /* Desbloqueia os 250px fixos do desktop */
+        min-height: 0;
+        gap: 16px;
+        padding: 0 0 24px 0;
+        border-bottom: 1px dashed #dcd7df; 
+    }
+
+    /* Redimensionamento Responsivo da Foto Principal do Card */
+    .home-page .app-container-cards .bio-info .image {
+        background-color: #111113;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9; /* Mantém proporção perfeita de cinema no mobile */
+        margin: 0 !important; /* Elimina margens em pixel que desalinhavam a foto */
+    }
+
+    .home-page .app-container-cards .bio-info .image-content {
+        display: block;
+        width: 100% !important;     
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    /* Ajuste de Texto */
+    .home-page .bio-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0 4px;
+    }
+    .home-page .bio-text-content h2 {
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+    margin: 4px 0 0 0;
+    font-family: var(--font-mono), sans-serif;
+    line-height: 1.2;
+    }
+/* Desbloqueia os 599px fixos para ocupar a tela toda do celular */
+.home-page .info-content {
+width: 100% !important;
+max-width: 100% !important;
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+.home-page .bio-text-content p {
+margin: 0;
+font-size: 15px;
+color: #f5b900;
+line-height: 1.4;
+font-family: var(--font-display), sans-serif;
+font-weight: 600;
+}
+.home-page .bio-text-content span {
+font-size: 14px;
+line-height: 1.6;
+text-align: left;
+color: #666666;
+font-family: var(--font-body), sans-serif;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+/* Correções da barra e mini-cards de recomendados no rodapé mobile */
+.app-container-menu {
+padding: 24px 0 0 0 !important;
+border-top: 1px solid #e8e4ea;
+}
+.app-container-menu > h2 {
+text-align: left !important;
+font-size: 20px;
+}
+.bio-info-menu {
+flex-direction: row !important; /* Foto esquerda, texto direita no celular */
+width: 100% !important;
+max-width: 100% !important;
+box-sizing: border-box;
+}
+/* Controlos e Paginação Mobile */
+.home-page .biography-search input {
+font-size: 16px;
+}
+.home-page .pagination {
+gap: 8px;
+padding: 24px 0;
+}
+.home-page .pagination button {
+padding: 8px 12px;
+font-size: 14px;
+font-weight: 600;
+min-width: 36px;
+height: 36px;
+}
+}
+/* Smartphones Compactos (Telas até 480px) */
+@media (max-width: 480px) {
+.home-page .main-context-block {
+gap: 20px;
+padding: 12px;
+}
+.home-page .bio-text-content h2 {
+font-size: 21px;
+}
+}
+
+@media (max-width: 600px) {
+    .home-page .main-context-block,
+    .home-page .main-context-block-cards,
+    .home-page .main-context-block-search,
+    .home-page .app-container-cards,
+    .home-page .app-container-menu {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .home-page .main-context-block-search .gallery-wrapper {
+        justify-content: flex-start;
+    }
+
+    .home-page .main-context-block-search .gallery-container {
+        min-width: 0;
+    }
+
+    .home-page .bio-info-menu-desc h4 {
+        overflow-wrap: anywhere;
+    }
+
+    .home-page .pagination {
+        flex-wrap: wrap;
+    }
+}
+
+/* Acessibilidade de animações reduzidas */
+@media (prefers-reduced-motion: reduce) {
+• {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+scroll-behavior: auto !important;
+}
+}

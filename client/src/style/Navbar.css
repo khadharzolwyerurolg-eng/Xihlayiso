@@ -1,0 +1,168 @@
+/* Container Geral do Cabeçalho */
+.site-header {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    
+    /* Configura o sticky no cabeçalho inteiro */
+    position: sticky;
+    top: -126px; /* Altura exata da logo para fazê-la sumir ao rolar (25px padding top/bottom + 76px altura da logo) */
+    z-index: 1000; /* Garante que o menu passe por cima de todas as imagens da galeria */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil quando fixado */
+}
+
+/* Área Superior Branca da Logo (Continua normal) */
+.site-header .header-top {
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* Barra de Navegação Escura Inferior (Fica presa no topo automaticamente) */
+.header-nav {
+    background-color: #0a050d;
+    padding: 0 40px;
+    
+    /* Garante que esta parte permaneça visível grudada no topo da janela */
+    position: sticky;
+    top: 0; 
+}
+
+/* Caixa Preta do Logotipo Fakaza */
+.logo-container {
+    background-color: #000000;
+    padding: 12px 35px 12px 20px;
+    display: inline-block;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    /* Linha amarela abaixo das letras 'aka' simulada com text-decoration */
+    text-decoration: underline #f5b900 4px;
+    text-underline-offset: 4px;
+}
+
+.header-nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between; /* Links na esquerda, lupa na direita */
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Espaçamento entre os links */
+}
+
+/* Links do Menu */
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #f5b900; /* Cor amarela ao passar o mouse ou ativo */
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES - RESPONSIVIDADE DO HEADER
+   ========================================================================== */
+
+/* 📱 TABLETS (Telas até 1024px) */
+@media (max-width: 1024px) {
+    .site-header {
+        /* Ajuste do sticky: como a logo diminui de tamanho, a folga para sumir também muda */
+        top: -102px; 
+    }
+
+    .site-header .header-top {
+        padding: 20px 24px;
+    }
+
+    .logo-text {
+        font-size: 44px; /* Diminui ligeiramente o tamanho da logo */
+    }
+
+    .header-nav {
+        padding: 0 24px;
+    }
+
+    .nav-links {
+        gap: 20px; /* Reduz o espaçamento entre os links */
+    }
+
+    .nav-item {
+        font-size: 16px; /* Diminui o texto dos links */
+    }
+}
+
+/* 📱 SMARTPHONES (Telas até 768px) */
+@media (max-width: 768px) {
+    .site-header {
+        /* Reajuste dinâmico da altura da logo para o efeito de rolagem */
+        top: -85px; 
+    }
+
+    .site-header .header-top {
+        padding: 15px 16px;
+        justify-content: center; /* Centraliza a logo no mobile */
+    }
+
+    .logo-container {
+        padding: 10px 24px 10px 16px;
+    }
+
+    .logo-text {
+        font-size: 32px; /* Logo mais compacta para caber na tela */
+        text-decoration-thickness: 3px; /* Linha amarela mais fina */
+    }
+
+    .header-nav {
+        padding: 0 16px;
+    }
+
+    /* Permite que o menu de links flua na horizontal com scroll caso não caiba na tela */
+    .nav-links {
+        gap: 16px;
+        overflow-x: auto; /* Adiciona scroll horizontal se os links esgotarem a largura */
+        scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+        -webkit-overflow-scrolling: touch; /* Scroll suave no iOS */
+        padding: 4px 0;
+    }
+
+    /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        white-space: nowrap; /* Garante que as palavras (ex: BIOGRAPHY) não quebrem linha */
+    }
+}
+
+/* 📱 CELULARES MUITO PEQUENOS (Telas até 400px) */
+@media (max-width: 400px) {
+    .logo-text {
+        font-size: 28px;
+    }
+    
+    .nav-links {
+        gap: 12px;
+    }
+    
+    .nav-item {
+        font-size: 13px;
+    }
+}

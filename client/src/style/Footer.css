@@ -1,0 +1,89 @@
+/* Container Geral do Rodapé */
+.site-footer {
+    width: 100%;
+    background-color: #0a050d; /* Roxo ultra escuro igual ao menu */
+    color: #89838d; /* Texto cinza suave discreto */
+    font-family: sans-serif;
+    padding: 40px 20px;
+    margin-top: auto; /* Empurra para o fim em layouts flexbox */
+}
+
+.footer-inner {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Área de Links em Linha Única */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #4a4250; /* Cor da barra divisória '|' */
+}
+
+.footer-links a {
+    color: #b5aeb9;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #f5b900; /* Destaque amarelo do Fakaza */
+}
+
+/* Divisão de Direitos Autorais e Redes */
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #1a1222; /* Linha divisória sutil interna */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.copyright-text {
+    margin: 0;
+    color: #89838d;
+}
+
+.highlight-brand {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Links das Redes Sociais */
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: #f5b900;
+    text-decoration: underline;
+}
+
+/* Ajuste Responsivo para Telas Pequenas */
+@media (max-width: 600px) {
+    .footer-links {
+        gap: 8px;
+        font-size: 11px;
+    }
+    .footer-bottom {
+        font-size: 12px;
+        text-align: center;
+    }
+}

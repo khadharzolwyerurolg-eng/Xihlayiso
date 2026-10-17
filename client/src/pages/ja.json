@@ -1,0 +1,422 @@
+
+  {
+    "name": "José Craveirinha",
+    "title": "Poeta Maior de Moçambique e Prémio Camões",
+    "summary": "Nascido em Lourenço Marques (atual Maputo), José Craveirinha é amplamente considerado o poeta nacional de Moçambique. Sua escrita vigorosa expressou o clamor pela liberdade, denunciou o racismo colonial e celebrou a identidade africana ronga e moçambicana.",
+    "achievements": [
+      "Primeiro escritor africano a receber o Prémio Camões, em 1991.",
+      "Sua poesia foi uma das armas intelectuais mais fortes pela independência nacional.",
+      "Ex-presidente da Associação dos Escritores Moçambicanos (AEMO)."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Maputo",
+    "tags": ["poesia", "literatura", "nacionalismo", "cultura"]
+  },
+  {
+    "name": "Eduardo Mondlane",
+    "title": "Arquiteto da Unidade Nacional e Fundador da FRELIMO",
+    "summary": "Eduardo Chivambo Mondlane foi um antropólogo, professor universitário e o líder fundador da Frente de Libertação de Moçambique. Uniu diferentes movimentos de resistência para iniciar a luta armada de libertação nacional contra o colonialismo.",
+    "achievements": [
+      "Principal arquiteto da unificação dos movimentos nacionalistas moçambicanos.",
+      "Primeiro moçambicano a obter um doutoramento (Ph.D.) em Sociologia e Antropologia.",
+      "Trabalhou como oficial de investigação nas Nações Unidas (ONU)."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Gaza / Maputo",
+    "tags": ["história", "educação", "política", "fundador"]
+  },
+  {
+    "name": "Maria de Lurdes Mutola",
+    "title": "Atleta Olímpica e 'A Menina de Ouro' de Moçambique",
+    "summary": "Nascida em Maputo, Lurdes Mutola é a maior referência do desporto moçambicano. Especialista na corrida de 800 metros, quebrou barreiras e colocou Moçambique no mapa do atletismo mundial ao conquistar múltiplos campeonatos mundiais e olímpicos.",
+    "achievements": [
+      "Medalha de Ouro nos Jogos Olímpicos de Sydney em 2000 nos 800 metros.",
+      "Três vezes campeã mundial em pista aberta e sete vezes em pista coberta.",
+      "Criou a Fundação Lurdes Mutola para apoiar o desporto juvenil e a educação feminina."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Maputo",
+    "tags": ["desporto", "atletismo", "pioneira", "inspiração"]
+  },
+  {
+    "name": "Noémia de Sousa",
+    "title": "A Mãe dos Poetas Moçambicanos e Ativista Cultural",
+    "summary": "Noémia de Sousa foi uma pioneira da poesia de moçambicanidade e da vertente literária da 'Negritude' em Moçambique. Seus poemas, escritos nas décadas de 40 e 50, funcionavam como manifestos contra a opressão colonial e a favor do orgulho da mulher negra.",
+    "achievements": [
+      "Primeira mulher negra moçambicana a publicar poesia de grande impacto social.",
+      "Sua obra 'Sangue Negro' é um marco fundador da literatura nacionalista moçambicana.",
+      "Jornalista combativa em publicações icónicas como O Brado Africano."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Maputo",
+    "tags": ["poesia", "literatura", "feminismo", "resistência"]
+  },
+  {
+    "name": "Mia Couto",
+    "title": "Biólogo, Escritor Renomado e Membro da Academia de Letras",
+    "summary": "António Emílio Leite Couto, conhecido como Mia Couto, é um dos escritores moçambicanos mais lidos do mundo. Sua escrita inovadora recria a língua portuguesa ao fundi-la com os regionalismos, provérbios e a tradição oral moçambicana.",
+    "achievements": [
+      "Vencedor do Prémio Camões em 2013 e do Neustadt International Prize.",
+      "Seu romance 'Terra Sonâmbula' foi eleito um dos doze melhores livros africanos do século XX.",
+      "Biólogo ativo na gestão e conservação de ecossistemas em Moçambique."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Sofala / Maputo",
+    "tags": ["literatura", "biologia", "ambiente", "cultura"]
+  },
+  {
+    "name": "Nachingwea",
+    "title": "Coletivo das Mulheres Destacadas na Luta de Libertação",
+    "summary": "Embora Nachingwea tenha sido a base de treino militar principal na Tanzânia, o termo evoca o Destacamento Feminino (DF) de Moçambique. Mulheres revolucionárias que quebraram tabus de género ao carregar armas, lutar na frente de combate e gerir a logística da independência.",
+    "achievements": [
+      "Criação do Destacamento Feminino em 1967, integrando a mulher no exército de libertação.",
+      "Fundamentação histórica para a criação da Organização da Mulher Moçambicana (OMM).",
+      "Defesa ativa da igualdade de direitos e educação para raparigas nos campos libertados."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Nacional / Maputo",
+    "tags": ["história", "feminismo", "revolução", "legado"]
+  },
+  {
+    "name": "Alberto Chissano",
+    "title": "Mestre da Escultura em Madeira e Pioneiro da Arte Moçambicana",
+    "summary": "Nascido em Gaza e radicado em Maputo, Alberto Chissano começou a esculpir em madeira como forma de expressar as dores, a espiritualidade e a vida quotidiana do seu povo. Suas esculturas orgânicas e alongadas influenciaram gerações de artistas.",
+    "achievements": [
+      "Um dos escultores mais inovadores da África Austral do século XX.",
+      "Transformou a sua própria residência na Matola no Museu Galeria Chissano.",
+      "Suas obras encontram-se expostas em coleções permanentes em todo o mundo."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Gaza / Maputo",
+    "tags": ["escultura", "artes", "museu", "cultura"]
+  },
+  {
+    "name": "Eusébio da Silva Ferreira",
+    "title": "O 'Pantera Negra' e Lenda do Futebol Mundial",
+    "summary": "Nascido no bairro de Mafalala, em Maputo, Eusébio cresceu a jogar futebol descalço nos campos locais antes de rumar para a Europa. Tornou-se um dos maiores avançados da história do futebol mundial, famoso pela sua velocidade e remates potentes.",
+    "achievements": [
+      "Vencedor da Bola de Ouro (Ballon d'Or) em 1965.",
+      "Melhor marcador do Campeonato do Mundo de 1966 na Inglaterra.",
+      "Ícone cultural global com origens profundamente enraizadas no subúrbio de Maputo."
+    ],
+    "imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+    "region": "Maputo",
+    "tags": ["desporto", "futebol", "lenda", "mafalala"]
+  },
+  {
+    "name": "Calane da Silva",
+    "title": "Jornalista, Escritor e Académico de Línguas Moçambicanas",
+    "summary": "Raul Alves Calane da Silva foi um proeminente jornalista, poeta e ensaísta moçambicano. Dedicou grande parte da sua vida académica a estudar a coabitação e a influência mútua entre a língua portuguesa e as línguas bantu, com foco especial no Ronga.",
+    "achievements": [
+      "Doutorado com investigações profundas sobre a rítmica e a oralidade nas línguas moçambicanas.",
+      "Vencedor do Prémio José Craveirinha de Literatura em 2011.",
+      "Grande dinamizador cultural e mentor de jovens escritores em Maputo."
+    ],
+"imageUrl": "https://i.pinimg.com/1200x/60/1a/96/601a960e2f550dea1538846a3d3f8fa5.jpg",
+"region": "Maputo",
+"tags": ["literatura", "jornalismo", "ronga", "educação"]
+},
+{
+"name": "Reinata Sadimba",
+"title": "Mestra da Cerâmica e Escultura Maconde",
+"summary": "Nascida em Cabo Delgado e mais tarde estabelecida em Maputo, Reinata Sadimba é uma das ceramistas mais importantes de África. Suas peças de barro combinam a tradição mística do povo Maconde com visões profundamente pessoais, repletas de formas antropomórficas.",
+"achievements": [
+"Rompeu a tradição Maconde que impedia as mulheres de esculpir em cerâmica.",
+"Suas obras integram o acervo do Museu Nacional de Arte de Maputo e de galerias europeias.",
+"Reconhecida internacionalmente pela originalidade técnica e estilística do seu barro cozido."
+],
+"imageUrl": "https://i.pinimg.com/736x/5d/f2/be/5df2be55588239273f17ab0808509f21.jpg",
+"region": "Cabo Delgado / Maputo",
+"tags": ["artes", "cerâmica", "maconde", "pioneira"]
+},
+{
+"name": "Chico António",
+"title": "Músico, Compositor e Guardião dos Ritmos Tradicionais",
+"summary": "Chico António foi uma das vozes mais marcantes da música de raiz moçambicana. Pesquisador dos ritmos tradicionais do sul do país, fundiu instrumentos tradicionais com arranjos modernos, imortalizando canções que narram a vida quotidiana das comunidades.",
+"achievements": [
+"Vencedor do prestigiado prémio RFI Découvertes na França em 1990.",
+"Um dos maiores embaixadores da música tradicional e da fusão instrumental moçambicana.",
+"Dedicou décadas a oficinas musicais e à transmissão de saberes para as novas gerações."
+],
+"imageUrl": "cloudinary.com",
+"region": "Inhambane / Maputo",
+"tags": ["música", "cultura", "ritmos", "tradição"]
+},
+{
+"name": "Orlando Mendes",
+"title": "Escritor e Cientista (Biólogo) Moçambicano",
+"summary": "Orlando Marques de Almeida Mendes foi um escritor multipremiado e biólogo. Atuando nas primeiras décadas da independência de Moçambique, dividiu-se entre a catalogação da flora nacional e a escrita de poesias e romances que analisavam a transição social do país.",
+"achievements": [
+"Pioneiro na literatura de ficção científica e crítica social no período pós-independência.",
+"Vencedor do Prémio de Poesia de Moçambique em 1974.",
+"Deixou um legado valioso na investigação botânica e fitossanitária do território nacional."
+],
+"imageUrl": "cloudinary.com",
+"region": "Sofala / Maputo",
+"tags": ["literatura", "ciência", "botânica", "história"]
+}
+]
+
+
+[
+  {
+    "name": "Nelson Mandela",
+    "title": "Líder Anti-Apartheid, Estadista e Ícone Global do Pan-Africanismo",
+    "summary": "Nelson Rolihlahla Mandela foi o principal líder da luta contra o regime segregacionista do Apartheid na África do Sul e o primeiro presidente negro democraticamente eleito do país. Passou 27 anos na prisão por defender a igualdade racial e tornou-se um símbolo universal de reconciliação, direitos humanos e justiça social.",
+    "achievements": [
+      "Vencedor do Prémio Nobel da Paz em 1993.",
+      "Liderou a transição pacífica para o fim do regime do Apartheid na África do Sul.",
+      "Arquiteto do conceito da 'Nação Arco-Íris' focado na unidade e igualdade."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrZaFkGkKb-j2yt-zR3zwYuyh-jMblXJv3siqQVtMSVJPdOFV6VW562YJlM2qq9fq8iJ68GKUFaKvJloXb_2Rwp1oDvD96aIZOY55Kg&s=10",
+    "region": "África do Sul / Internacional",
+    "tags": ["história", "política", "pan-africanismo", "líder"]
+  },
+  {
+    "name": "Kwame Nkrumah",
+    "title": "Primeiro Presidente do Gana e Pai Fundador do Pan-Africanismo Moderno",
+    "summary": "Kwame Nkrumah foi o líder que guiou a Costa do Ouro (atual Gana) à sua independência do domínio britânico em 1957, tornando-se o primeiro país da África subsariana a alcançar a soberania. Um filósofo político influente, defendeu a criação de uns 'Estados Unidos de África' e a total libertação do continente.",
+    "achievements": [
+      "Conquistou a primeira independência da África subsariana pós-colonial.",
+      "Membro fundador da Organização da Unidade Africana (OUA, atual União Africana).",
+      "Ideólogo pioneiro do conceito de neocolonialismo e emancipação económica africana."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSunJ7jUqj4RW7LL8A-MYyF3rtIrrVVA_kfkqlQ1ndCDqQMYnJ9EPo-h-46GZ2CBEOuPa7aL_risb0avMEO3qUbFesfQjihxLLdmmiwaNg&s=10",
+    "region": "Gana / Internacional",
+    "tags": ["pan-africanismo", "história", "política", "líder"]
+  },
+  {
+    "name": "Graça Machel",
+    "title": "Ativista Internacional, Primeira-Dama de Duas Nações e Defensora de Direitos Humanos",
+    "summary": "Graça Simbine Machel é uma política e ativista social moçambicana de renome internacional. Foi Ministra da Educação e Cultura de Moçambique, onde liderou a alfabetização de milhões de cidadãos. É a única mulher na história moderna a ter sido primeira-dama de dois países (Moçambique e África do Sul) e dedica a vida à defesa dos direitos das mulheres e crianças.",
+    "achievements": [
+      "Reduziu drasticamente as taxas de analfabetismo em Moçambique no pós-independência.",
+      "Nomeada Comendadora Honorária da Ordem do Império Britânico pelas suas causas humanitárias.",
+      "Membro do 'The Elders', grupo de líderes globais que trabalham pela paz mundial."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwMLaIs9LI6UnKvV65PjPwk-i1n2WW4rzKR34kQKLRKw&s",
+    "region": "Gaza / Maputo",
+    "tags": ["política", "educação", "humanitário", "pioneira"]
+  },
+  {
+    "name": "Wole Soyinka",
+    "title": "Dramaturgo, Poeta e Primeiro Africano a Vencer o Prémio Nobel da Literatura",
+    "summary": "Akinwande Oluwole Babatunde Soyinka é um escritor e ativista político nigeriano. A sua obra literária analisa as complexidades da cultura iorubá fundidas com técnicas ocidentais de drama e poesia. Conhecido pela sua oposição firme a ditaduras e regimes opressores no continente, usou sempre a caneta como arma de protesto.",
+    "achievements": [
+      "Primeiro autor africano a ser galardoado com o Prémio Nobel da Literatura, em 1986.",
+      "Preservador crucial da cosmologia e rituais tradicionais africanos através do teatro.",
+      "Ativista galardoado com múltiplos prémios de liberdade de expressão e direitos humanos."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQ6COhyEONAu1ldJWtrUT7uLXFwNFMmZUhvn5hCZT0NGa7KzE-6BpB2EJXYji0QsUmJeUEcaAAlIlPCQ_I",
+    "region": "Nigéria / Internacional",
+    "tags": ["literatura", "teatro", "cultura", "pioneiro"]
+  },
+  {
+    "name": "Wangari Maathai",
+    "title": "Ambientalista, Ativista Política e Primeira Mulher Africana Prémio Nobel da Paz",
+    "summary": "Wangari Muta Maathai foi uma ativista ambiental e política queniana. Fundou o 'Green Belt Movement' (Movimento Cinturão Verde), uma organização focada na plantação de árvores, conservação ambiental e nos direitos das mulheres. Enfrentou regimes autoritários para proteger florestas e promover o desenvolvimento sustentável em África.",
+    "achievements": [
+      "Primeira mulher africana a receber o Prémio Nobel da Paz, em 2004.",
+      "Liderou o plantio de mais de 51 milhões de árvores no Quénia para combater a erosão.",
+      "Primeira mulher na África Oriental a obter um doutoramento (Ph.D.) em Biologia Veterinária."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUw-at2IvLEDq5VpuDllJZ3NjDtMbJeolBWbv_QSm3DbPxW5mC-q0Q6yLSFsU6TKyiKo5ST559ac5fD2y4x65TmF5htTNwDbUA5BBww&s=10",
+    "region": "Quénia / Internacional",
+    "tags": ["ambiente", "ciência", "feminismo", "pioneira"]
+  },
+  {
+    "name": "Fany Mpfumo",
+    "title": "O Rei da Marrabenta e Ícone da Música Tradicional Moçambicana",
+    "summary": "Fany Mpfumo foi um dos maiores impulsionadores e compositores da Marrabenta, o ritmo musical nacional de Moçambique. Nascido em Lourenço Marques (Maputo), gravou sucessos marcantes na África do Sul que fundiam influências do Jazz sul-africano com a rítmica tradicional Ronga e as vivências urbanas dos subúrbios da capital.",
+    "achievements": [
+      "Imortalizou a música popular moçambicana gravando clássicos na língua ronga.",
+      "Considerado o principal responsável pela modernização instrumental da Marrabenta.",
+      "Influência fundamental para gerações de músicos moçambicanos que se seguiram."
+    ],
+    "imageUrl": "https://static.portaldamusica.org.mz/cImages/5_0000000000/img000166-518-20220318-142156.jpg",
+    "region": "Maputo",
+    "tags": ["música", "marrabenta", "ronga", "tradição"]
+  },
+  {
+    "name": "Giselda Barroso",
+    "title": "Cientista, Investigadora e Pioneira da Biologia Marinha em Moçambique",
+    "summary": "Giselda Barroso dedicou a sua carreira académica ao estudo e à preservação dos ecossistemas marinhos ao longo da extensa costa moçambicana. As suas pesquisas em biologia marinha foram cruciais para mapear a biodiversidade da Baía de Maputo e desenhar as primeiras políticas públicas de pesca sustentável após a independência.",
+    "achievements": [
+      "Uma das primeiras cientistas mulheres de topo na investigação científica nacional.",
+      "Publicou estudos fundamentais sobre crustáceos e ecossistemas de mangais em Moçambique.",
+      "Contribuiu de forma vital para a formação de novos biólogos e investigadores no país."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8Sb-DDsJUnx2Gs0XUggJfM29YNZJJ9ukKTAfcltmfA&s=10",
+    "region": "Maputo",
+    "tags": ["ciência", "biologia", "ambiente", "educação"]
+  },
+  {
+    "name": "Matias Mboa",
+    "title": "Mestre Construtor de Instrumentos e Guardião da Mbira",
+    "summary": "Matias Mboa foi um artesão e músico moçambicano lendário em Maputo, conhecido pela sua dedicação exclusiva à preservação e fabrico de instrumentos musicais tradicionais como a Mbira, a Xitende e a Timbila. O seu atelier era um ponto de referência cultural para manter vivas as técnicas de acústica e manufatura bantu antiga.",
+    "achievements": [
+      "Mestre absoluto no restauro e construção artesanal de instrumentos de percussão tradicionais.",
+      "Assegurou a transmissão do conhecimento do fabrico de instrumentos às comunidades locais.",
+      "Colaborou com grandes nomes da música internacional para integrar sons tradicionais no Jazz."
+    ],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7q7y8LXciDvM9utlMreMWgBOmlfvJ8paMlP54A_ezg&s",
+    "region": "Maputo",
+    "tags": ["artes", "música", "artesanato", "património"]
+  },
+  {
+    "name": "Suraia Nanique",
+    "title": "Inovadora Tecnológica e Ativista pelo Acesso Digital em Moçambique",
+    "summary": "Suraia Nanique destaca-se no cenário contemporâneo como uma das principais vozes na liderança de projetos de inclusão digital e alfabetização tecnológica para raparigas nas zonas suburbanas de Maputo. Através de bootcamps e mentoria, trabalha para fechar a lacuna de género no setor de TI em Moçambique.",
+    "achievements": [
+      "Desenvolveu iniciativas de ensino de lógica de programação para centenas de raparigas em Moçambique.",
+      "Reconhecida internacionalmente como uma líder emergente em inovação de impacto social na África Austral.",
+      "Defensora do uso de tecnologias open-source para a resolução de problemas comunitários locais."
+    ],
+    "imageUrl": "https://i.pinimg.com/736x/41/8f/34/418f34d291153be40552924a88b38936.jpg",
+    "region": "Maputo",
+    "tags": ["tecnologia", "inovação", "pioneira", "impacto-social"]
+  },
+  {
+    "name": "Sérgio Santimano",
+    "title": "Fotojornalista Documental e Cronista Visual de Moçambique",
+    "summary": "Nascido em Lourenço Marques (Maputo), Sérgio Santimano é um dos fotógrafos documentais mais respeitados de África. As suas imagens captaram os momentos mais duros da guerra civil moçambicana, o processo de pacificação do país e, acima de tudo, a dignidade, resiliência e cultura do povo moçambicano nas zonas rurais.",
+    "achievements": [
+      "Cobriu marcos históricos de Moçambique em fotorreportagens publicadas a nível mundial.",
+      "Criador de exposições aclamadas como 'Moçambique - Caminhos da Paz'.",
+      "Referência na documentação visual das transformações sociais e culturais do pós-independência."
+    ],
+    "imageUrl": "https://cloudinary.com",
+    "region": "Maputo",
+    "tags": ["fotografia", "artes", "jornalismo", "história"]
+  },
+  {
+    "name": "Josina Machel",
+    "title": "Heroína Nacional, Combatente e Ícone da Emancipação da Mulher Moçambicana",
+"summary": "Josina Abiatar Machel foi uma das figuras mais proeminentes da luta armada de libertação nacional. Rompeu barreiras sociais ao juntar-se à guerrilha na frente de combate e liderou a secção de Assuntos Sociais da FRELIMO. Tornou-se o símbolo maior do feminismo revolucionário e da luta pela igualdade de género em Moçambique.",
+"achievements": [
+"Líder fundamental no desenvolvimento do Destacamento Feminino da guerrilha.",
+"Responsável pela criação de centros de acolhimento e educação para crianças órfãs de guerra.",
+"O dia da sua morte, 7 de Abril, foi instituído como o Dia da Mulher Moçambicana."
+],
+"imageUrl": "https://i.pinimg.com/236x/89/5f/b1/895fb1ee7c8c21f816428cc65e9339c9.jpg",
+"region": "Inhambane / Maputo",
+"tags": ["história", "política", "feminismo", "líder"]
+},
+{
+"name": "Idelson Mutola",
+"title": "Cientista de Dados, Engenheiro de Software e Investigador de IA em Moçambique",
+"summary": "Idelson Mutola é um jovem engenheiro moçambicano que tem conquistado destaque no setor de TI na África Austral. Especialista em Inteligência Artificial e Processamento de Linguagem Natural (NLP), foca a sua investigação no desenvolvimento de modelos computacionais para traduzir, indexar e preservar línguas bantu locais, como o Ronga e o Changana.",
+"achievements": [
+"Pioneiro na aplicação de algoritmos de Machine Learning para a catalogação de dialetos moçambicanos.",
+"Desenvolveu soluções tecnológicas inovadoras para otimizar sistemas de e-governamentais locais.",
+"Mentora ativamente jovens universitários de Maputo a ingressarem no mercado internacional de software."
+],
+"imageUrl": "https://i.pinimg.com/236x/89/5f/b1/895fb1ee7c8c21f816428cc65e9339c9.jpg",
+"region": "Maputo",
+"tags": ["tecnologia", "ciência", "inovação", "inteligência-artificial"]
+},
+{
+"name": "Luís Bernardo Honwana",
+"title": "Escritor e Autor de 'Nós Matámos o Cão-Tinhoso'",
+"summary": "Nascido em Lourenço Marques (Maputo), Luís Bernardo Honwana escreveu uma das obras mais influentes da literatura africana de língua portuguesa. O seu livro de contos 'Nós Matámos o Cão-Tinhoso' (1964) revolucionou a escrita literária moçambicana, utilizando metáforas profundas para denunciar a crueldade, a desigualdade social e o racismo do sistema colonial.",
+"achievements": [
+"Autor de uma obra literária clássica estudada em universidades de todo o mundo.",
+"Desempenhou funções como Diretor do Gabinete do Presidente Samora Machel.",
+"Ex-membro do Conselho Executivo da UNESCO e grande promotor do património cultural moçambicano."
+],
+"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkDOOgUMF9w2SuorFiqdpWTice78o0NGKTY8kYUE5yAk0aEnWWXOqlKaR5-IdqIM_tBkX9T9HIDtrme0LaZXbvZSBD_ClZfegxCF-qOI&s=10",
+"region": "Maputo",
+"tags": ["literatura", "cultura", "história", "política"]
+},
+{
+"name": "Manuela Soeiro",
+"title": "Encenadora, Atriz e Fundadora do Grupo de Teatro Mutumbela Gogo",
+"summary": "Manuela Soeiro é a grande matriarca do teatro profissional em Moçambique. Fundou o Mutumbela Gogo, o primeiro grupo de teatro profissional do país, sediado no Teatro Avenida em Maputo. Através das artes cénicas, Soeiro trouxe para o palco debates profundos sobre a corrupção, conflitos sociais, identidade nacional e tradição oral.",
+"achievements": [
+"Pioneira na profissionalização das artes cénicas e do teatro em Moçambique.",
+"Formou e lançou as carreiras dos atores e encenadores mais prestigiados da atualidade.",
+"Manteve um espaço cultural ativo de resistência e liberdade criativa por mais de quatro décadas."
+],
+"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR17y8uzw2dACzYvob-M0JHtGoC-IYipok8BIrVTrTvBg&s",
+"region": "Maputo",
+"tags": ["teatro", "artes", "cultura", "pioneira"]
+},
+{
+"name": "Ricardo Rangel",
+"title": "O Pai do Fotojornalismo Moçambicano",
+"summary": "Ricardo Rangel foi o primeiro fotógrafo negro a integrar os quadros de um jornal colonial em Moçambique. Com o seu olhar apurado e corajoso, Rangel usou as suas fotografias a preto e branco para documentar a dura realidade da opressão, a vida noturna boémia da Rua Araújo em Maputo e a luta quotidiana da população suburbana, desafiando a censura da época.",
+"achievements": [
+"Considerado internacionalmente o mentor e pai do fotojornalismo moderno moçambicano.",
+"Fundador e primeiro diretor do semanário independente Savana e da revista Tempo.",
+"Fundou o Centro de Formação Fotográfica (CFF) em Maputo, moldando gerações de fotógrafos."
+],
+"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMHGnnbtVbDBvaVevk5hoTdYEckXgO_tprN9299XiP7WZm-29Td0U6u05MJOyB-blB-Fry&s",
+"region": "Maputo",
+"tags": ["fotografia", "jornalismo", "história", "arte"]
+},
+{
+"name": "Awa Meité",
+"title": "Estilista, Cineasta e Promotora das Indústrias Criativas Africanas",
+"summary": "Awa Meité é uma proeminente designer de moda e cineasta do Mali que trabalha intensamente na preservação e valorização dos tecidos e técnicas de fiação tradicionais africanos. O seu trabalho foca-se em conectar o património têxtil antigo da África Ocidental com o design contemporâneo de alta-costura, promovendo o empoderamento económico de artesãos locais.",
+"achievements": [
+"Criadora do festival internacional 'Daoulaba' focado na valorização do algodão local africano.",
+"Reconhecida globalmente pela fusão sustentável entre ecologia, moda contemporânea e tradição.",
+"Realizadora de documentários que registam a vida dos guardiões dos saberes artesanais em África."
+],
+"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BxuUx4rmRdgiZhVLKYZEqewAsdhuelhCm2mk7DzpgQ&s",
+"region": "Mali / Internacional",
+"tags": ["moda", "artes", "cinema", "sustentabilidade"]
+},
+{
+"name": "Eusébio Sanjane",
+"title": "Escritor, Editor e Dinamizador da Literatura Juvenil Moçambicana",
+"summary": "Eusébio Sanjane é uma voz de destaque na literatura moçambicana contemporânea. Os seus contos e romances abordam com sensibilidade e realismo os desafios urbanos enfrentados pelos jovens em Maputo, misturando a herança cultural dos mais velhos com as transformações da era digital e a busca por identidade numa sociedade em rápida mutação.",
+"achievements": [
+"Galardoado com prémios literários nacionais pelo seu impacto na escrita de ficção urbana.",
+"Fundador de iniciativas editoriais independentes que publicam novos autores moçambicanos.",
+"Promotor ativo de palestras e feiras de livros em escolas públicas periféricas da capital."
+],
+"imageUrl": "https://lvbco.com.br/wp-content/uploads/2026/01/Eusebio-final.jpg",
+"region": "Maputo",
+"tags": ["literatura", "educação", "cultura", "jovens"]
+},
+{
+"name": "Isabel de Sousa",
+"title": "Pioneira na Gestão Hospitalar e Pesquisa em Saúde Pública",
+"summary": "Dra. Isabel de Sousa desempenhou um papel central na reestruturação e modernização dos sistemas de saúde pública na província e cidade de Maputo após 1975. Enfrentando a escassez extrema de médicos, organizou as primeiras campanhas nacionais de vacinação massiva e dedicou a sua carreira a investigar doenças endémicas tropicais.",
+"achievements": [
+"Liderou equipas médicas que erradicaram focos de epidemias graves no pós-independência.",
+"Uma das primeiras gestoras hospitalares moçambicanas a desenhar políticas de medicina comunitária.",
+"Autora de artigos académicos cruciais sobre epidemiologia em contextos de recursos limitados."
+],
+"imageUrl": "https://www.isa.ulisboa.pt/sites/default/files/styles/user_picture_big/public/images/team_member/2012-05/53931-743e5c13d3ba262679da101f65c4a9be.jpg.webp?itok=-sX1znKG",
+"region": "Maputo",
+"tags": ["ciência", "saúde", "humanitário", "pioneira"]
+},
+{
+"name": "Stewart Sukuma",
+"title": "Músico, Ativista Social e Embaixador Cultural de Moçambique",
+"summary": "Luis Pereira, artisticamente conhecido como Stewart Sukuma, é um dos cantores e compositores mais populares e dinâmicos de Moçambique. A sua música mistura ritmos tradicionais moçambicanos como a Marrabenta e o Mutimba com o Pop e o Jazz contemporâneos. Sukuma usa o seu alcance cultural global para liderar grandes campanhas humanitárias de saúde e educação no país.",
+"achievements": [
+"Nomeado o primeiro Embaixador de Boa Vontade da UNICEF em Moçambique.",
+"Galardoado internacionalmente pela sua capacidade de modernizar e exportar a Marrabenta.",
+"Fundador do projeto 'Música é Vida', focado na formação musical de crianças desfavorecidas."
+],
+"imageUrl": "https://static.portaldamusica.org.mz/cImages/5_0000000000/img000222-518-20220323-091538.webp",
+"region": "Zambézia / Maputo",
+"tags": ["música", "marrabenta", "humanitário", "cultura"]
+},
+{
+"name": "Filipe Samuel Magaia",
+"title": "Comandante da Luta de Libertação e Estrategista Militar",
+"summary": "Filipe Samuel Magaia foi um militar, político e o primeiro chefe do Departamento de Defesa e Segurança da FRELIMO durante a luta de libertação nacional. Um estrategista brilhante, foi responsável por organizar e treinar as primeiras frentes de guerrilha e incutir a disciplina e o espírito de unidade nacional nos combatentes.",
+"achievements": [
+"Arquiteto inicial da estrutura militar que combateu as forças coloniais.",
+"Responsável pela formação militar e ideológica dos primeiros núcleos de libertação.",
+"Considerado uma das referências históricas máximas de coragem e patriotismo no país."
+],
+"imageUrl": "https://i.pinimg.com/1200x/b3/95/7e/b3957eab453f4fa75935c2153666c96b.jpg",
+"region": "Maputo",
+"tags": ["história", "política", "estratégia", "líder"]
+}
+]
