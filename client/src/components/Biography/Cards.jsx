@@ -3,7 +3,7 @@ import axios from "axios"
 import { Link, useParams, useSearchParams } from "react-router-dom"
 import Menu from "./Menu"
 
-const API_URL = "http://localhost:5000/api/biography"
+const API_URL = "https://xihlayiso.onrender.com/api/biography"
 const PAGE_SIZE = 6
 
 function normalizeSearchText(value) {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import { Link, useParams } from "react-router-dom"
 
-const API_URL = "http://localhost:5000/api/biography"
+const API_URL = "https://xihlayiso.onrender.com/api/biography"
 const MAX_RELATED_BIOGRAPHIES = 5
 
 function normalize(value) {

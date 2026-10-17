@@ -5,7 +5,7 @@ import axios from "axios"
 import { useLocation } from "react-router-dom"
 import "../style/Gallery.css"
 
-const API_URL = "http://localhost:5000/api/biography/all"
+const API_URL = "https://xihlayiso.onrender.com/api/biography/all"
 const ITEMS_PER_PAGE = 15;
 const GRID_LAYOUTS = [
     "w-2 h-2",
