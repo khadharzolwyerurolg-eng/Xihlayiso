@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
+import Xycover from "../imgs/XyCover.png"
 import axios from "axios"
 import { Link, useParams, useSearchParams } from "react-router-dom"
 import Menu from "./Menu"
+import { usePageLoading } from "../../context/LoadingContext"
+import { BIOGRAPHY_API_URL } from "../../config/api"
 
-const API_URL = "https://xihlayiso.onrender.com/api/biography"
 const PAGE_SIZE = 6
 
 function normalizeSearchText(value) {
@@ -28,6 +30,7 @@ export default function Cards() {
     const [shareMessage, setShareMessage] = useState("")
     const [page, setPage] = useState(1)
     const { id } = useParams()
+    const { beginLoading, endLoading } = usePageLoading()
     const [searchParams] = useSearchParams()
     const query = normalizeSearchText(searchParams.get("q") || "").trim()
     const filteredBiography = query
@@ -55,8 +58,9 @@ export default function Cards() {
         setPage(1)
 
         const fetchBioData = async () => {
+            beginLoading()
             try {
-                const url = id ? `${API_URL}/find/${id}` : `${API_URL}/all`
+                const url = id ? `${BIOGRAPHY_API_URL}/find/${id}` : `${BIOGRAPHY_API_URL}/all`
                 const res = await axios.get(url)
                 if (!active) return
 
@@ -67,6 +71,8 @@ export default function Cards() {
                     setBiography([])
                     setErrorMessage(error.response?.data?.message || "Unable to load biography.")
                 }
+            } finally {
+                endLoading()
             }
         }
 
@@ -74,7 +80,7 @@ export default function Cards() {
         return () => {
             active = false
         }
-    }, [id])
+    }, [beginLoading, endLoading, id])
 
     useEffect(() => {
         setPage(1)
@@ -127,7 +133,8 @@ export default function Cards() {
                                 <div className="biography-detail-content">
                                     <div className="biography-detail-images">
                                         <div className="biography-detail-images-img">
-                                            <img className="biographies-img" src={biography.imageUrl} alt={biography.name} />
+                                            <img className="biography-watermark"  style={{width: '300px'}} src={Xycover} alt="" aria-hidden="true" />
+                                            <img className="biographies-img" style={{filter: 'grayscale(100%)'}} src={biography.imageUrl} alt={biography.name} />
                                         </div>
                                         <div className="biography-detail-images-menu">
                                             <Menu />
@@ -194,7 +201,7 @@ export default function Cards() {
                     const cardContent = (
                         <>
                             <div className="image">
-                                <img className="image-content" src={biography?.imageUrl} alt={biography.name} />
+                                <img style={{filter: 'grayscale(100%)'}} className="image-content" src={biography?.imageUrl} alt={biography.name} />
                             </div>
 
                             <div className="bio-text-content">

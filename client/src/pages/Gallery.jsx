@@ -3,9 +3,10 @@ import Footer from "../layout/Footer"
 import { useEffect, useRef, useState } from "react"
 import axios from "axios"
 import { useLocation } from "react-router-dom"
+import { usePageLoading } from "../context/LoadingContext"
+import { BIOGRAPHY_API_URL } from "../config/api"
 import "../style/Gallery.css"
 
-const API_URL = "https://xihlayiso.onrender.com/api/biography/all"
 const ITEMS_PER_PAGE = 15;
 const GRID_LAYOUTS = [
     "w-2 h-2",
@@ -40,21 +41,25 @@ export default function Gallery() {
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE)
     const loadMoreRef = useRef(null)
     const article = useLocation().search
+    const { beginLoading, endLoading } = usePageLoading()
 
     useEffect(() => {
         const fetchBioData = async () => {
+            beginLoading()
             try {
-                const res = await axios.get(`${API_URL}${article}`)
+                const res = await axios.get(`${BIOGRAPHY_API_URL}/all${article}`)
                 const biographies = res.data.biographies || []
                 setBiography(biographies)
                 setGridLayouts(createRandomLayouts(biographies.length))
                 setVisibleCount(ITEMS_PER_PAGE)
             } catch (error) {
                 console.log(error)
+            } finally {
+                endLoading()
             }
         }
         fetchBioData()
-    }, [article])
+    }, [article, beginLoading, endLoading])
 
     // OTIMIZADO: Removida a dependência de visibleCount para evitar recriações infinitas do Observer
     useEffect(() => {
@@ -93,7 +98,7 @@ export default function Gallery() {
                             <div className={`gallery-container ${spanClass}`} key={bio._id}>
                                 <div className="gallery-item">
                                     <div className="image">
-                                        <img src={bio?.imageUrl} alt={bio?.name} />
+                                        <img style={{filter: 'grayscale(100%)'}} src={bio?.imageUrl} alt={bio?.name} />
                                     </div>
                                     <div className="descname">
                                         <h3>{bio?.name}</h3>

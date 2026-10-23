@@ -2,9 +2,14 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
+const allowedOrigins = (
+    process.env.CLIENT_URLS ||
+    process.env.CLIENT_URL ||
+    "https://xihlayisos.onrender.com,http://localhost:3000"
+).split(",").map((origin) => origin.trim()).filter(Boolean);
 
 app.use(cors({
-    origin: ["https://xihlayisos.onrender.com", "https://xihlayisos.onrender.com"],
+    origin: allowedOrigins,
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],

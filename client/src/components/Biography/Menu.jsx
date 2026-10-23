@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { Link, useParams } from "react-router-dom"
+import { usePageLoading } from "../../context/LoadingContext"
+import { BIOGRAPHY_API_URL } from "../../config/api"
 
-const API_URL = "https://xihlayiso.onrender.com/api/biography"
 const MAX_RELATED_BIOGRAPHIES = 5
 
 function normalize(value) {
@@ -29,6 +30,7 @@ export default function Menu() {
     const [biography, setBiography] = useState([])
     const [errorMessage, setErrorMessage] = useState("")
     const { id } = useParams()
+    const { beginLoading, endLoading } = usePageLoading()
 
     useEffect(() => {
         let active = true
@@ -42,11 +44,12 @@ export default function Menu() {
         }
 
         const fetchBioData = async () => {
+            beginLoading()
             try {
                 setErrorMessage("")
                 const [listResponse, currentResponse] = await Promise.all([
-                    axios.get(`${API_URL}/all`),
-                    axios.get(`${API_URL}/find/${id}`)
+                    axios.get(`${BIOGRAPHY_API_URL}/all`),
+                    axios.get(`${BIOGRAPHY_API_URL}/find/${id}`)
                 ])
                 if (!active) return
 
@@ -74,6 +77,8 @@ export default function Menu() {
                         error.response?.data?.message || "Unable to load related biographies."
                     )
                 }
+            } finally {
+                endLoading()
             }
         }
 
@@ -81,7 +86,7 @@ export default function Menu() {
         return () => {
             active = false
         }
-    }, [id])
+    }, [beginLoading, endLoading, id])
 
     if (!id) return null
 
@@ -97,7 +102,7 @@ export default function Menu() {
                 biography.map((item) => (
                     <div className="bio-info-menu" key={item._id}>
                         <div className="bio-info-menu-image">
-                            <img src={item.imageUrl} alt="" />
+                            <img style={{filter: 'grayscale(100%)'}} src={item.imageUrl} alt="" />
                         </div>
                         <div className="bio-info-menu-desc">
                             <h4>{item.name}</h4>

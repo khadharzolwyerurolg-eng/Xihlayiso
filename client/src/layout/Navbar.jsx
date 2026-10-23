@@ -1,13 +1,14 @@
 import "../style/Navbar.css"
+import XyLogo from "../components/imgs/XyLogo.png"
 import { NavLink } from "react-router-dom";
 export default function Navbar() {
     return (
         <header className="site-header">
             {/* Bloco de cima: Contém apenas o Logotipo */}
             <div className="header-top">
-                <div className="logo-container">
-                    <span className="logo-text">Xihlayiso</span>
-                </div>
+                <div className="header-top-inner">
+                    <img className="XyLogo" style={{margin: '-6rem'}}  src={XyLogo} alt="XyLogo"/>
+                </div> 
             </div>
 
             {/* Bloco de baixo: Barra preta com a Navegação e Ícone de Busca */}
