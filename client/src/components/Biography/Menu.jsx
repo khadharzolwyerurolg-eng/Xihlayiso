@@ -92,7 +92,7 @@ export default function Menu() {
 
     return (
         <div className="app-container-menu">
-            <h2>Related biographies</h2>
+            <h2 className="relatedBio">Related biographies</h2>
 
             {errorMessage ? (
                 <p role="alert">{errorMessage}</p>

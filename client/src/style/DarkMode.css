@@ -1,0 +1,126 @@
+:root {
+  --theme-page: #eeebeb;
+  --theme-surface: #ffffff;
+  --theme-surface-raised: #f5f5f5;
+  --theme-text: #222222;
+  --theme-text-muted: #666666;
+  --theme-border: #e8e4ea;
+}
+
+body.dark-mode {
+  --theme-page: #121212;
+  --theme-surface: #1e1e1e;
+  --theme-surface-raised: #292929;
+  --theme-text: #f1f1f1;
+  --theme-text-muted: #c2c2c2;
+  --theme-border: #3b3b3b;
+}
+
+body {
+  background-color: var(--theme-page);
+  color: var(--theme-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+  display: inline-grid;
+  width: 80px;
+  height: 50px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #f5b900;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #f5b900;
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 38px;
+  height: 40px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.dark-mode .app-container,
+.dark-mode .app-container.home-page,
+.dark-mode .app-container-context .app-container {
+  background-color: var(--theme-surface);
+  color: var(--theme-text);
+}
+/**/
+.dark-mode .app-container.home-page .bio-text-content h2{
+    color: #fff;
+}
+.dark-mode .app-container-menu .relatedBio{
+    color: var(--theme-text);
+}
+
+.dark-mode .app-container-menu .bio-info-menu{
+    background-color: var(--theme-surface-raised);
+    border: 2px solid #f5b900;;
+}
+.dark-mode .bio-text-content h2,
+.dark-mode .biography-detail-header h1,
+.dark-mode .biography-detail-section h2,
+.dark-mode .gallery-item .descname h3 {
+  color: var(--theme-text);
+}
+
+.dark-mode .bio-text-content p,
+.dark-mode .bio-text-content span,
+.dark-mode .biography-detail-title,
+.dark-mode .biography-detail-section p,
+.dark-mode .biography-detail-section li {
+  color: var(--theme-text-muted);
+}
+
+.dark-mode .biography-detail-section .biography-tags li {
+  background-color: var(--theme-surface-raised);
+  color: var(--theme-text);
+}
+
+.dark-mode .main-context-block,
+.dark-mode .biography-detail-section .biography-share {
+  border-color: var(--theme-border);
+}
+
+.dark-mode .biography-detail-section .biography-share {
+  background-color: var(--theme-surface-raised);
+  color: var(--theme-text);
+}
+
+.dark-mode .biography-detail-section .biography-share:hover {
+  background-color: #353535;
+}
+
+.dark-mode .app-container .biography-search input {
+  background-color: var(--theme-surface-raised);
+  color: var(--theme-text);
+}
+
+.dark-mode .pagination button {
+  border-color: var(--theme-border);
+  background-color: var(--theme-surface-raised);
+  color: var(--theme-text);
+}
+
+.dark-mode .app-container .pagination button[aria-current="page"] {
+  border-color: #f5b900;
+  background-color: #f5b900;
+  color: #ffffff;
+}
+
+.dark-mode .gallery-item .image {
+  background-color: var(--theme-surface-raised);
+}

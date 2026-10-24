@@ -1,6 +1,7 @@
 import "../style/Navbar.css"
 import XyLogo from "../components/imgs/XyLogo.png"
 import { NavLink } from "react-router-dom";
+import DarkModeToggle from "../components/Button/DarkMode";
 export default function Navbar() {
     return (
         <header className="site-header">
@@ -20,6 +21,7 @@ export default function Navbar() {
                         <NavLink to="/gallery" className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}>GALLERY</NavLink>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}>CONTACT</NavLink>
                     </div>
+                    <DarkModeToggle/>
                 </div>
             </nav>
         </header>
