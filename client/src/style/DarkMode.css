@@ -68,7 +68,9 @@ body {
 
 .dark-mode .app-container-menu .bio-info-menu{
     background-color: var(--theme-surface-raised);
-    border: 2px solid #f5b900;;
+}
+ .dark-mode .app-container-menu .bio-info-menu .readmore{
+    color: #f5b900;
 }
 .dark-mode .bio-text-content h2,
 .dark-mode .biography-detail-header h1,
